@@ -107,23 +107,6 @@ A deep, narrow network should build increasingly abstract feature representation
 
 \subsection{Results}
 
-\begin{table}[H]
-\centering
-\begin{tabular}{lcccc}
-\toprule
-Epoch & Train Loss & Train Acc & Val Loss & Val Acc \\
-\midrule
-1  & --- & --- & --- & --- \\
-10 & --- & --- & --- & --- \\
-20 & --- & --- & --- & --- \\
-30 & --- & --- & --- & --- \\
-\midrule
-\textbf{Best} & --- & --- & --- & \textbf{[insert]} \\
-\bottomrule
-\end{tabular}
-\caption{Tower Model training summary. Fill values from notebook output.}
-\end{table}
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{tower_curves.png}
@@ -155,23 +138,6 @@ Epoch & Train Loss & Train Acc & Val Loss & Val Acc \\
 \end{itemize}
 
 \subsection{Results}
-
-\begin{table}[H]
-\centering
-\begin{tabular}{lcccc}
-\toprule
-Epoch & Train Loss & Train Acc & Val Loss & Val Acc \\
-\midrule
-1   & --- & --- & --- & --- \\
-10  & --- & --- & --- & --- \\
-20  & --- & --- & --- & --- \\
-40  & --- & --- & --- & --- \\
-\midrule
-\textbf{Best} & --- & --- & --- & \textbf{[insert]} \\
-\bottomrule
-\end{tabular}
-\caption{Champion Model training summary. Fill values from notebook output.}
-\end{table}
 
 \begin{figure}[H]
     \centering
@@ -265,8 +231,8 @@ No increase in model depth, width, or training time can recover information that
 Model & Architecture & Parameters & Epochs & Best Val Acc & Train Acc (final) \\
 \midrule
 Pancake  & $784 \to [1024]^2 \to 15$   & 1,868,815 & 30 & 78.41\% & 97.90\% \\
-Tower    & $784 \to [256]^8 \to 15$     & 669,455   & 30 & [insert] & [insert] \\
-Champion & $784 \to [1024]^3 \to 15$    & 2,924,559 & 40 & [insert] & [insert] \\
+Tower    & $784 \to [256]^8 \to 15$     & 669,455   & 30 & 79.21\% & 96.99\% \\
+Champion & $784 \to [1024]^3 \to 15$    & 2,924,559 & 40 & 83.43\% & 95.33\% \\
 \bottomrule
 \end{tabular}
 \caption{Comparison of all three models. Insert Tower and Champion values from notebook output.}
